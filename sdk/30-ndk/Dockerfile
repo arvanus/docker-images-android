@@ -1,5 +1,6 @@
 FROM cirrusci/android-sdk:30
 
-ENV ANDROID_NDK_VERSION 21.3.6528147
+# https://developer.android.com/ndk/downloads
+ENV ANDROID_NDK_VERSION 21.4.7075529
 
 RUN yes | sdkmanager "ndk;$ANDROID_NDK_VERSION"

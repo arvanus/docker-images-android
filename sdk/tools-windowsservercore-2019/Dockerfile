@@ -2,12 +2,12 @@ FROM cirrusci/windowsservercore:2019
 
 ENV ANDROID_HOME C:\\Android
 ENV ANDROID_SDK_ROOT $ANDROID_HOME
-ENV ANDROID_SDK_TOOLS_VERSION 6609375
-ENV JAVA_HOME C:\\Program Files\\Java\\jdk1.8.0_211
-ENV JAVA_VERSION 8.0.211
+ENV ANDROID_SDK_TOOLS_VERSION 7302050
+ENV JAVA_HOME C:\\Program Files\\Java\\jdk11.0.2.9
+ENV JAVA_VERSION 11.0.2.9
 
 RUN powershell.exe -Command \
-    choco install -y jdk8 --version $env:JAVA_VERSION; \
+    choco install -y jdk11 --version $env:JAVA_VERSION; \
     Remove-Item C:\ProgramData\chocolatey\logs -Force -Recurse \
     mkdir $env:ANDROID_HOME; \
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; \
