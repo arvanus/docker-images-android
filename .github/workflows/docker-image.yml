@@ -15,11 +15,10 @@ env:
   username: ${{ github.actor }}
   password: ${{ secrets.DOCKER_TOKEN }}
   SDK: 31
-  SDK_DIR: ./sdk/31
 
 defaults:
   run:
-    working-directory: ${{ env.SDK_DIR }}
+    working-directory: ./sdk/31
     
 jobs:
 
