@@ -19,7 +19,7 @@ env:
 
 defaults:
   run:
-    working-directory: ${{ SDK_DIR }}
+    working-directory: ${{ env.SDK_DIR }}
     
 jobs:
 
