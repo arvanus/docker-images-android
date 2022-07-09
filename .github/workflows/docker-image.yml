@@ -15,7 +15,7 @@ env:
   username: ${{ github.actor }}
   password: ${{ secrets.DOCKER_TOKEN }}
   SDK: 31
-  SDK_DIR: ./sdk/${{ SDK }}
+  SDK_DIR: ./sdk/31
 
 defaults:
   run:
